@@ -22,7 +22,8 @@ You need:
 Run this:
 
 ```sh
-git clone https://github.com/yubrew/dotfiles.git ~/cl
+git clone git://github.com/yubrew/dotfiles.git ~/cl
+git clone git://github.com/gmarik/vundle.git ~/cl/etc/vim/bundle/vundle
 cd ~/cl
 source ./etc/link
 ```

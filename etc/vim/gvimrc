@@ -38,6 +38,8 @@ set anti " Antialias font
 
 "set transparency=0
 
+colorscheme ir_black
+
 " Default size of window
 set columns=179 
 set lines=50

@@ -1,3 +1,28 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+" original repos on github
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mileszs/ack.vim'
+Bundle 'tpope/vim-rake'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-sensible'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+" vim-scripts repos
+" nongithub repos
+
+syntax on
+filetype plugin indent on
+
 " -----------------------------------------------------------------------------  
 "
 " |                            VIM Settings                                   |
@@ -18,7 +43,7 @@
 " |                                                                           |
 " |   ,i = toggle invisibles                                                  |
 " |   ,c = toggle comments                                                    |
-" |   ,F2 = toggle paste "                                                     |
+" |   ,F2 = toggle paste "                                                    |
 " |                                                                           |
 " |   enter and shift-enter = adds a new line after/before the current line   |
 " |                                                                           |
@@ -57,7 +82,7 @@ function! Tabstyle_spaces()
   set expandtab
 endfunction
 
-call Tabstyle_spaces()
+call Tabstyle_tabs()
 
 
 " Indenting *******************************************************************
@@ -182,15 +207,15 @@ map <Leader>p <C-^> " Go back to previous file
 
 
 " Omni Completion *************************************************************
-autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
+" autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
+" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" autocmd FileType c set omnifunc=ccomplete#Complete
 " May require ruby compiled in
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete 
+" autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete 
 
 
 " Hard to type *****************************************************************
@@ -221,6 +246,8 @@ let NERDCreateDefaultMappings=0 " I turn this off to make it simple
 map <Leader>f :CtrlP<CR>
 map <Leader>b :CtrlPBuffer<CR>
 
+" Ctags + CtrlP ********************************************************
+map <Leader>. :CtrlPTag<CR>
 
 " autocomplpop ***************************************************************
 " complete option
@@ -232,15 +259,15 @@ map <Leader>b :CtrlPBuffer<CR>
 
 
 " railsvim ***************************************************************
-map <Leader>ra :AS<CR>
-map <Leader>rs :RS<CR>
+" map <Leader>ra :AS<CR>
+" map <Leader>rs :RS<CR>
 
 
 " ctags ***************************************************************
-let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
-let Tlist_WinWidth = 50
-map <Leader>t :TlistToggle<cr>
-map <Leader>j <C-]>
+" let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
+" let Tlist_WinWidth = 50
+" map <Leader>t :TlistToggle<cr>
+" map <Leader>j <C-]>
 
 
 " -----------------------------------------------------------------------------  

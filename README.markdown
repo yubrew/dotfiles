@@ -52,13 +52,13 @@ I mod these all the time, and sometimes I break stuff.  Also, my main platform i
 ## vim shortcuts
 
 It's also in vimrc.
-`V` visual mode
-`,n` nerdtree
-`,f` fuzzy file search
-`,c` toggle commenting
-`/` search within file
-`u` undo
-`$` end of line
-`^` start line
-`Ctrl + }` navigate paragraph down
-`Ctrl + {` navigate paragraph up
+* `V` visual mode
+* `,n` nerdtree
+* `,f` fuzzy file search
+* `,c` toggle commenting
+* `/` search within file
+* `u` undo
+* `$` end of line
+* `^` start line
+* `Ctrl + }` navigate paragraph down
+* `Ctrl + {` navigate paragraph up

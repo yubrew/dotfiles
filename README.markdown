@@ -36,8 +36,8 @@ I store all my command-line files in a folder (cl), then under that folder there
 
   * ~
     * cl
-    * bin
-    * docs
+      * bin
+      * docs
       * etc
         * vim
           

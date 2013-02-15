@@ -2,20 +2,22 @@
 
 ## dotfiles
 
-Dotfiles are meant to be forked / shareable / scalable. These dotfiles are forked from [Todd Werth](http://github.com/twerth) and inspired by [Zach Holman](http://github.com/holman)'s [post on sharing dotfiles](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
+Dotfiles are meant to be forked / shareable / scalable. These dotfiles are forked from [Todd Werth](http://github.com/twerth).
 
 This repo represents a subset of all my command-line folders.
 
 ## requirements
 You need:
+[macvim](http://code.google.com/p/macvim/) or vim
 `git`
 `brew`
-`rvm use system` (if you dont' have vim installed already)
 
+## installing vim
+`rvm use system` (installing vim has a conflict with ruby 1.9.*, so use system ruby 1.8.7)
 `brew install mercurial`
 `brew install vim`
 
-## install
+## use command-line files
 
 Run this:
 
@@ -47,7 +49,7 @@ I mod these all the time, and sometimes I break stuff.  Also, my main platform i
 
 ## more info
 
-"Blog post":http://blog.toddwerth.com/entries/9
+[Blog post](http://blog.toddwerth.com/entries/9)
 
 ## vim shortcuts
 

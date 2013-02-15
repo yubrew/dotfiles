@@ -8,14 +8,14 @@ This repo represents a subset of all my command-line folders.
 
 ## requirements
 You need:
-[macvim](http://code.google.com/p/macvim/) or vim
-`git`
-`brew`
+* [macvim](http://code.google.com/p/macvim/) or vim
+* `git`
+* `brew`
 
 ## installing vim
-`rvm use system` (installing vim has a conflict with ruby 1.9.*, so use system ruby 1.8.7)
-`brew install mercurial`
-`brew install vim`
+* `rvm use system` (installing vim has a conflict with ruby 1.9.*, so use system ruby 1.8.7)
+* `brew install mercurial`
+* `brew install vim`
 
 ## use command-line files
 
@@ -42,6 +42,8 @@ I store all my command-line files in a folder (cl), then under that folder there
       * docs
       * etc
           * vim
+			* bundle
+			* colors
           
 ## warning
 

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mongod --logpath /usr/local/var/log/mongodb/mongod.log -f /usr/local/etc/mongod.conf --fork
+echo 'mongodb started'

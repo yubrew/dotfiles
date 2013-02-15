@@ -1,3 +1,12 @@
+# Use Pry for IRB
+begin
+  require "pry"
+  Pry.start
+  exit
+rescue LoadError => e
+  warn "=> Unable to load pry"
+end
+
 # Awesome IRB (mod'd) file from http://github.com/logankoester/irbrc
 # Setup:
 # sudo gem install wirble what_methods

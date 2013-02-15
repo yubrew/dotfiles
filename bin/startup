@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo echo
+
+cd ~/law360
+
+rake solr_helper:start
+echo 'started solr'
+
+start_mongodb
+
+pg_ctl -D /usr/local/var/postgres/data -l /usr/local/var/postgres/data/server.log start
+echo 'started postgres'

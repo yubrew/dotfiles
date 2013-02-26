@@ -26,6 +26,8 @@ git clone git://github.com/yubrew/dotfiles.git ~/cl
 git clone git://github.com/gmarik/vundle.git ~/cl/etc/vim/bundle/vundle
 cd ~/cl
 source ./etc/link
+vim .
+:BundleInstall! # installs all vundles
 ```
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/cl`.

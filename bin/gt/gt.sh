@@ -108,3 +108,5 @@ gtcreateremotebranch (){
 }
 
 complete -C ~/cl/bin/gt/complete_branch_list.rb -o default gtcheckout gtpushorigin
+
+# git config --global core.excludesfile ~/.gitignore # make .gitignore global

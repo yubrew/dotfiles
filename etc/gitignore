@@ -1,7 +1,5 @@
 .DS_Store
-.svn
 *.sw?
-*.swp
-*.un?
+*~
 .netrwhist
 .DS_Store

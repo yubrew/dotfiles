@@ -17,6 +17,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-sensible'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'kchmck/vim-coffee-script'
 " vim-scripts repos
 " nongithub repos
 
@@ -82,7 +83,7 @@ function! Tabstyle_spaces()
   set expandtab
 endfunction
 
-call Tabstyle_tabs()
+call Tabstyle_spaces()
 
 
 " Indenting *******************************************************************

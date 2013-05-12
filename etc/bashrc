@@ -309,4 +309,6 @@ fi
 #else
 #fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # 
+alias bi="bundle install --binstubs=.bin"
+export PATH="./.bin:$PATH:$HOME/.rvm/bin" # Add ./.bin for bundle exec fatigue, Add RVM to PATH for scripting

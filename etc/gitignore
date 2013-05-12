@@ -4,3 +4,5 @@
 .netrwhist
 .DS_Store
 TAGS
+bin
+.bin

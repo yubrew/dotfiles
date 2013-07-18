@@ -274,8 +274,6 @@ killhard() {
 
 # Ruby ----------------------------------------------------
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 # Fixes problems with sending email in ruby
 #export RUBYOPT="-r openssl"
@@ -300,7 +298,11 @@ if [ -f ~/.bashrc_local ]; then
   source ~/.bashrc_local
 fi
 
+# Use tmux for ssht when possible ----------------------------------------------
 
+function ssht(){
+  ssh $* -t 'tmux a || tmux || /bin/bash'
+}
 
 # Test ------------------------------------------------------------------------ 
 
@@ -308,6 +310,9 @@ fi
 #elif
 #else
 #fi
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 #PATH=$PATH:$HOME/.rvm/bin # 
 alias bi="bundle install --binstubs=.bin"

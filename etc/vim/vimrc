@@ -85,7 +85,7 @@ function! Tabstyle_spaces()
   set expandtab
 endfunction
 
-call Tabstyle_spaces()
+call Tabstyle_tabs()
 
 
 " Indenting *******************************************************************
@@ -139,6 +139,9 @@ match LongLineWarning '\%120v.*' " Error format when a line is longer than 120
 set nowrap
 set linebreak  " Wrap at word
 
+" Warnings
+" *****************************************************************************
+set shortmess+=A " ignore existing swap file warnings
 
 " Directories *****************************************************************
 " Setup backup location and enable
@@ -269,8 +272,8 @@ map <Leader>. :CtrlPTag<CR>
 " ctags ***************************************************************
 " let Tlist_Ctags_Cmd = "/usr/local/bin/ctags"
 " let Tlist_WinWidth = 50
-" map <Leader>t :TlistToggle<cr>
-" map <Leader>j <C-]>
+map <Leader>t :TlistToggle<cr>
+map <Leader>j <C-]>
 
 
 " -----------------------------------------------------------------------------  

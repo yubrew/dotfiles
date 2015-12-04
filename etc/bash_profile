@@ -46,7 +46,7 @@ echo -ne "Server time is: "; date
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
 export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.2/libexec"
 
 # Notes: ----------------------------------------------------------
 # When you start an interactive shell (log in, open terminal or iTerm in OS X, 
@@ -63,3 +63,10 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.0/libexec"
 #     bashrc
 #     .bashrc
 alias ctags='/usr/local/bin/ctags'
+
+function sssh { ssh ubuntu@"$1" -o StrictHostKeyChecking=no  -i /Users/yubrew/dev/aws/id_law360-dev-keypair; }
+
+export -f sssh
+
+# added by Anaconda 2.2.0 installer
+export PATH="/Users/yubrew/anaconda/bin:$PATH"

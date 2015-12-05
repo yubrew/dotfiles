@@ -64,7 +64,7 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.2/libexec"
 #     .bashrc
 alias ctags='/usr/local/bin/ctags'
 
-function sssh { ssh ubuntu@"$1" -o StrictHostKeyChecking=no  -i /Users/yubrew/dev/aws/id_law360-dev-keypair; }
+function sssh { ssh ubuntu@"$1" -o StrictHostKeyChecking=no  -i /Users/yubrew/$LAW360_PATH; }
 
 export -f sssh
 

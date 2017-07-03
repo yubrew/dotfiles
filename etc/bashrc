@@ -240,7 +240,7 @@ alias reloadbash='source ~/cl/etc/bash_profile'
 
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
 alias m='more'
-alias top='top -o cpu' # os x
+#alias top='top -o cpu' # os x
 
 alias df='df -h' # Show disk usage
 

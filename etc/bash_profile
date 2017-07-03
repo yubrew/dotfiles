@@ -44,9 +44,6 @@ echo -ne "Server time is: "; date
 
 # EC2 API Tools ---------------------------------------------------
 export JAVA_HOME="$(/usr/libexec/java_home)"
-export EC2_PRIVATE_KEY="$(/bin/ls "$HOME"/.ec2/pk-*.pem | /usr/bin/head -1)"
-export EC2_CERT="$(/bin/ls "$HOME"/.ec2/cert-*.pem | /usr/bin/head -1)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.2/libexec"
 
 # Notes: ----------------------------------------------------------
 # When you start an interactive shell (log in, open terminal or iTerm in OS X, 
@@ -63,6 +60,3 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.6.12.2/libexec"
 #     bashrc
 #     .bashrc
 alias ctags='/usr/local/bin/ctags'
-
-# added by Anaconda 2.2.0 installer
-export PATH="/Users/yubrew/anaconda/bin:$PATH"
